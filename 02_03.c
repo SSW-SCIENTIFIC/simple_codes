@@ -1,4 +1,4 @@
-/* 企尸恕を脱いてSqrt(2) の猛を纷换する*/
+/* 浜屽垎娉曘倰鐢ㄣ亜銇qrt(2) 銇�ゃ倰瑷堢畻銇欍倠*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -31,7 +31,7 @@ void calc_sqrt_int_part(double x)
 	square_root = (lower + upper) / 2.0;
 	printf("%d: %d %.16E\n", count, int(lower), sqrt(x) - int(lower));
 
-	/* 士数含が腊眶夺说の眷圭に螟しく箭芦拉が碍い */
+	/* 骞虫柟鏍广亴鏁存暟杩戝倣銇牬鍚堛伀钁椼仐銇忓弾鏉熸�с亴鎮亜 */
 
 	return;
 }

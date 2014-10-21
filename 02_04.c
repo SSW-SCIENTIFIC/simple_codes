@@ -1,4 +1,4 @@
-/* ÆóÊ¬Ë¡¤òÍÑ¤¤¤ÆSqrt(2) ¤ÎÃÍ¤ò·×»»¤¹¤ë*/
+/* äºŒåˆ†æ³•ã‚’ç”¨ã„ã¦Sqrt(2) ã®å€¤ã‚’è¨ˆç®—ã™ã‚‹*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -18,12 +18,12 @@ unsigned int my_mult(unsigned int x, unsigned int y)
 	unsigned int base = (x < y) ? y : x, fact = (x < y) ? x : y;
 	unsigned int result = 0;
 
-	/* ÉáÄÌ¤Ë½ñ¤¯¤ÈO(n)¤Ê¤Î¤ÇO(log(n))ÄøÅÙ¤Ë·×»»ÎÌ¤ò²¼¤²¤ë */
+	/* æ™®é€šã«æ›¸ãã¨O(n)ãªã®ã§O(log(n))ç¨‹åº¦ã«è¨ˆç®—é‡ã‚’ä¸‹ã’ã‚‹ */
 	while (fact)
 	{
 		if (fact & 1) result += base;
 		base += base;
-		fact >>= 1; /* ¥Ó¥Ã¥È¥·¥Õ¥È¤Ï°ãË¡¡© */
+		fact >>= 1; /* ãƒ“ãƒƒãƒˆã‚·ãƒ•ãƒˆã¯é•æ³•ï¼Ÿ */
 	}
 
 	return result;
@@ -36,11 +36,11 @@ unsigned int my_div(unsigned int x, unsigned int y)
 
 	if (y == 0)
 	{
-		printf("¥¼¥í½ü»»\n");  /* ¥¼¥í½ü»» */
+		printf("ã‚¼ãƒ­é™¤ç®—\n");  /* ã‚¼ãƒ­é™¤ç®— */
 		exit(0);
 	}
 
-	/* ·×»»ÎÌ¤Ï»ÄÇ° */
+	/* è¨ˆç®—é‡ã¯æ®‹å¿µ */
 	while (true)
 	{
 		div += y;
@@ -49,7 +49,7 @@ unsigned int my_div(unsigned int x, unsigned int y)
 			return n;
 		if (x - div < 0)
 		{
-			printf("À°¿ô¾å¤Ç½ü»»ÉÔÇ½\n");  /* ÈóÀ°¿ôÃÍ */
+			printf("æ•´æ•°ä¸Šã§é™¤ç®—ä¸èƒ½\n");  /* éæ•´æ•°å€¤ */
 			exit(0);
 		}
 	}

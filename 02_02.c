@@ -1,4 +1,4 @@
-/* ��ʬˡ���Ѥ���Sqrt(2) ���ͤ�׻�����*/
+/* 二分法を用いてSqrt(2) の値を計算する*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

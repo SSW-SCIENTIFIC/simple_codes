@@ -13,10 +13,10 @@ int main(void)
 	int i = 1;
 
 	/* Calculate (1 + 1/n)^n */
-	while ((n *= POW_BASE) <= MAX_N / 2) /* ¥ª¡¼¥Ð¡¼¥Õ¥í¡¼²óÈò */
+	while ((n *= POW_BASE) <= MAX_N / 2) /* ã‚ªãƒ¼ãƒãƒ¼ãƒ•ãƒ­ãƒ¼å›žé¿ */
 		printf("%20llu\t%.16f\t%.16E\n", n * i, abs(pow(1.0 + 1.0 / (double(n * i)), (double)(n * i)) - M_E), 1.0 / (double(n * i)));
 
-	/* pow´Ø¿ô¤ÎÂè2°ú¿ô¤¬int or double¤Ê¤Î¤Ï¤Á¤ç¤Ã¤È¥¢¥ì */
+	/* powé–¢æ•°ã®ç¬¬2å¼•æ•°ãŒint or doubleãªã®ã¯ã¡ã‚‡ã£ã¨ã‚¢ãƒ¬ */
 
 	return 0;
 }

@@ -3,7 +3,7 @@
 #include <math.h>
 
 #define MAX_N LLONG_MAX
-#define MAX_FACT 170 /* ¤³¤ì¤òÄ¶¤¨¤ë¤Èdouble¤Ç¤â¥ª¡¼¥Ğ¡¼¥Õ¥í¡¼ */
+#define MAX_FACT 170 /* ã“ã‚Œã‚’è¶…ãˆã‚‹ã¨doubleã§ã‚‚ã‚ªãƒ¼ãƒãƒ¼ãƒ•ãƒ­ãƒ¼ */
 
 double pow_ll(double base, long long pow);
 double my_fact(unsigned int n);
@@ -29,8 +29,8 @@ int main(void)
 
 double my_fact(unsigned int n)
 {
-	/* ºÆµ¢¤Ç¼ÂÁõ¤·¤Æ¤ß¤ë                                             */
-	/* ¥¢¥»¥ó¥Ö¥éÆÉ¤ó¤Ç¤ß¤ë¤Ècall¤µ¤ì¤Æ¤¿¤Î¤ÇËöÈøºÇÅ¬²½¤µ¤ì¤Ê¤¤¤Ã¤İ¤¤ */
+	/* å†å¸°ã§å®Ÿè£…ã—ã¦ã¿ã‚‹                                             */
+	/* ã‚¢ã‚»ãƒ³ãƒ–ãƒ©èª­ã‚“ã§ã¿ã‚‹ã¨callã•ã‚Œã¦ãŸã®ã§æœ«å°¾æœ€é©åŒ–ã•ã‚Œãªã„ã£ã½ã„ */
 	if (n == 0) return 1.0;
 	else return double(n) * my_fact(n - 1);
 }

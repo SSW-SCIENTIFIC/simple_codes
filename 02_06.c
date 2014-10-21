@@ -13,7 +13,7 @@ int main(void)
 	int i = 1;
 
 	/* Calculate (1 + 1/n)^n */
-	while ((n *= POW_BASE) <= MAX_N / 2) /* ¥ª¡¼¥Ð¡¼¥Õ¥í¡¼²óÈò */
+	while ((n *= POW_BASE) <= MAX_N / 2) /* ã‚ªãƒ¼ãƒãƒ¼ãƒ•ãƒ­ãƒ¼å›žé¿ */
 		printf("%20llu\t%.16f\t%.16E\n", n * i, abs(pow_ll(1.0 + 1.0 / (double(n * i)), n * i) - M_E), 1.0 / (double(n * i)));
 
 	return 0;
@@ -23,7 +23,7 @@ double pow_ll(double base, unsigned long long pow)
 {
 	double value = 1.0;
 
-	/* O(log(n))¤ÎÀ°¿ô»Ø¿ô·×»» */
+	/* O(log(n))ã®æ•´æ•°æŒ‡æ•°è¨ˆç®— */
 	do {
 		if (pow & 1) value *= base;
 		pow >>= 1;

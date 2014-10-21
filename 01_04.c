@@ -1,9 +1,9 @@
 /**
-* ÆóÊ¬Ë¡¤òÍÑ¤¤¤Æsqrt(2) ¤ÎÃÍ¤ò·×»»¤¹¤ë
+* äºŒåˆ†æ³•ã‚’ç”¨ã„ã¦sqrt(2) ã®å€¤ã‚’è¨ˆç®—ã™ã‚‹
 */
 #include <stdio.h>
 #include <math.h>
-#include <float.h> /* DBL_EPSILON¤ÎÄêµÁ¤ò¥í¡¼¥É */
+#include <float.h> /* DBL_EPSILONã®å®šç¾©ã‚’ãƒ­ãƒ¼ãƒ‰ */
 
 #define TARGET 200.0
 
