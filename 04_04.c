@@ -18,8 +18,8 @@ int main(void)
 }
 
 /* Calc log(x) by Newton Method */
-/* x���傫���̈�ŋɒ[�Ɏ����������� */
-/* x���������̈��Newton�@, �傫���ꍇ��2���@�Ōv�Z���ׂ��� */
+/* xが大きい領域で極端に収束性が悪化 */
+/* xが小さい領域でNewton法, 大きい場合に2分法で計算すべきか */
 
 double my_log(double x)
 {
@@ -27,7 +27,7 @@ double my_log(double x)
 	unsigned long count = 0;
 
 
-	/* x <= 0.0�̏ꍇ�̗�O���� */
+	/* x <= 0.0の場合の例外処理 */
 	if (x == 0.0)
 		return -INFINITY;
 	if (x < 0.0)
